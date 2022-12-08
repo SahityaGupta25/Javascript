@@ -34,4 +34,8 @@ console.log("The Third Element is = "+b[3])
 // 1st Way
 
 console.log("5"+5+8)
-// Whenever their is a String type value it will 
+// Whenever their is a String type value it will Concatinate . Not add the numbers
+
+// 2nd way
+
+console.log(5+5)
