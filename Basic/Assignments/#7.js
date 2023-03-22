@@ -11,3 +11,5 @@ console.log(date1.getDay()+'-'+date1.getMonth()+'-'+date1.getFullYear(),date1.ge
 // c. DD/MM/YYYY HH:mm
 
 
+const date2 = new Date();
+console.log(date2.getDay()+'/'+date2.getMonth()+'/'+date2.getFullYear(),date2.getHours()+':'+date2.getMinutes());
