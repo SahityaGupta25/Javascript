@@ -5,7 +5,8 @@ console.log(date.getFullYear()+'-'+date.getMonth()+'-'+date.getDay(),date.getHou
 
 // b. DD-MM-YYYY HH:mm
 
-
+const date1 = new Date();
+console.log(date1.getDay()+'-'+date1.getMonth()+'-'+date1.getFullYear(),date1.getHours()+':'+date1.getMinutes());
 
 // c. DD/MM/YYYY HH:mm
 
