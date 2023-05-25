@@ -6,3 +6,5 @@ let e = true
 let f = false
 let g = null
 let h = undefined
+console.log(typeof d,typeof g ,typeof h);
+console.log(c+BigInt('4'))
