@@ -13,3 +13,4 @@ let d = Symbol('I am a Professional Coder')
 
 console.log(typeof d,typeof g ,typeof h);
 console.log(c+BigInt('4'))
+// These ALL are Primitive Datatypes.
