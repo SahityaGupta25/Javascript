@@ -22,3 +22,19 @@ while (n!=cn) {
     n = prompt('Enter Correct Number');
 }
 console.log('Correct!')
+
+// 4. Write a function to calculate mean of 5 numbers.
+
+// function meann(a,b,c,d,e) {
+//     let a = prompt("Enter value of a")
+//     let b = prompt("Enter value of b")
+//     let c = prompt("Enter value of c")
+//     let d = prompt("Enter value of d")
+//     let e = prompt("Enter value of e")
+//     let form = ((a+b+c+d+e)/5)
+//     console.log(form)
+// }
+let meann = (a,b,c,d,e)=> {
+    return(a+b+c+d+e)/5
+}
+console.log(mean(66,25,16,9,29));
