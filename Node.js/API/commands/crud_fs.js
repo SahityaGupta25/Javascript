@@ -14,10 +14,20 @@ const filepath = `${dirpath}/apple.txt`;
 
 
 //          APPEND
-fs.appendFile(filepath,'and file name is apple.txt',(err)=>{
-    if (!err) {
-        console.log("file is updated");
-    }
-});
+// fs.appendFile(filepath,'and file name is apple.txt',(err)=>{
+//     if (!err) {
+//         console.log("file is updated");
+//     }
+// });
+
+//          RENAME
+// fs.rename(filepath,`${dirpath}/fruit.txt`,(err)=>{
+//     if (!err) console.log('File is renamed');
+// })
 
 
+
+//          DELETE
+fs.unlinkSync(`${dirpath}/fruit.txt`);
+
+// Buffer is a small amount of memory which is required to do a process of a Node.js.
