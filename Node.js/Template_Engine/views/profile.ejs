@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Profile</title>
+</head>
+<body>
+    <h1>Welcome <%= user.name %> </h1>
+    <h1>Welcome <%= user.work %> </h1>
+    <h1>Welcome <%= user.Age %> </h1>
+    <ul>
+        <% user.skills.forEach((items) => { %>
+    
+            <li><%= items %></li>
+       <% }) %> 
+    </ul> 
+    
+</body>
+</html>
