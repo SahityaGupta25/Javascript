@@ -8,11 +8,17 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+var session = require('express-session')
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+app.use(session({
+  resave:false, //* It simply means that if value of session has'nt changed then don't save , by doing this it helps to reduce burden on server because of less request on it.
+  saveUninitialized:false,
+  secret:"haribol"
+}))
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
