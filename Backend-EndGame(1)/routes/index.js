@@ -38,4 +38,14 @@ router.get('/delete', async function(req,res){
     res.send(deleteUser)
 })
 
+// ^ --------------SESSION-------------------------------------
+router.get('/',function(req,res){
+  res.session =  true
+  res.render("index")
+})
+router.get('/checkban',function(req,res){
+  console.log(req.session);
+  res.send('Check kiya hain console dekho')
+})
+
 module.exports = router;
