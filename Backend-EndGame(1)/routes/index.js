@@ -7,15 +7,15 @@ const userModel = require('./users')
 //   res.render("index")
 // })
 
-router.get  ('/create', async function(req,res){
-  // * This create method will return user thats why I kept it in variable
-  const createUser = await userModel.create({
-    username:'Mathew',
-    age:16,
-    name:'Ujjwal'
-  })
-  res.send(createUser);
-})
+// router.get  ('/create', async function(req,res){
+//   // * This create method will return user thats why I kept it in variable
+//   const createUser = await userModel.create({
+//     username:'Mathew',
+//     age:16,
+//     name:'Ujjwal'
+//   })
+//   res.send(createUser);
+// })
 
 router.get  ('/allusers', async function(req,res){
   // * This create method will return user thats why I kept it in variable
@@ -26,7 +26,7 @@ router.get  ('/allusers', async function(req,res){
 })
 router.get  ('/user', async function(req,res){
   // * This create method will return user thats why I kept it in variable
-  const singleUser = await userModel.findOne({username:"Aishya"})
+  const singleUser = await userModel.findOne({username:"Mathew"})
 // ! when their will be no user of a particular name then this will return NULL
   //? console.log(singleUser);
     res.send(singleUser)
