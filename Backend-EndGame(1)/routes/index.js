@@ -20,6 +20,7 @@ router.get  ('/create', async function(req,res){
 router.get  ('/allusers', async function(req,res){
   // * This create method will return user thats why I kept it in variable
   const allUSers = await userModel.find()
+  // & Find is used to find all users 
     res.send(allUSers)
   
 })
@@ -30,6 +31,11 @@ router.get  ('/user', async function(req,res){
   //? console.log(singleUser);
     res.send(singleUser)
   
+})
+
+router.get('/delete', async function(req,res){
+    const deleteUser = await userModel.findOneAndDelete({username:"Mathew"})
+    res.send(deleteUser)
 })
 
 module.exports = router;
