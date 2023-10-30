@@ -8,7 +8,7 @@
 const mongoose = require('mongoose')
 
 //^ Node connect through mongoose with mongoDB on LocalHOst= 127.0.0.1 on port 27017 then create database " mybase "
-mongoose.connect('mongodb://localhost:27017/mybase')
+mongoose.connect('mongodb://127.0.0.1:27017/mybase')
 
 // ^ Schema (Document in DB) creation 
 const userSchema = mongoose.Schema({
