@@ -7,15 +7,15 @@ const userModel = require('./users')
 //   res.render("index")
 // })
 
-// router.get  ('/create', async function(req,res){
-//   // * This create method will return user thats why I kept it in variable
-//   const createUser = await userModel.create({
-//     username:'Mathew',
-//     age:16,
-//     name:'Ujjwal'
-//   })
-//   res.send(createUser);
-// })
+router.get  ('/create', async function(req,res){
+  // * This create method will return user thats why I kept it in variable
+  const createUser = await userModel.create({
+    username:'Mathew',
+    age:16,
+    name:'Ujjwal'
+  })
+  res.send(createUser);
+})
 
 router.get  ('/allusers', async function(req,res){
   // * This create method will return user thats why I kept it in variable
