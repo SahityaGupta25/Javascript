@@ -25,7 +25,9 @@ router.get  ('/allusers', async function(req,res){
 })
 router.get  ('/user', async function(req,res){
   // * This create method will return user thats why I kept it in variable
-  const singleUser = await userModel.findOne({username:"Mathew"})
+  const singleUser = await userModel.findOne({username:"Aishya"})
+// ! when their will be no user of a particular name then this will return NULL
+  //? console.log(singleUser);
     res.send(singleUser)
   
 })
