@@ -1,9 +1,23 @@
-var express = require('express');
-var router = express.Router();
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
 
-module.exports = router;
+//TODO install mongoose
+//TODO require and setup connection
+//TODO make Schema
+//TODO create model and export
+
+const mongoose = require('mongoose')
+
+//^ Node connect through mongoose with mongoDB on LocalHOst= 127.0.0.1 on port 27017 then create database " mybase "
+mongoose.connect('mongodb://localhost:27017/mybase')
+
+// ^ Schema (Document in DB) creation 
+const userSchema = mongoose.Schema({
+username:String,
+name:String,
+age:Number
+})
+        //^   (name,schema)
+module.exports = mongoose.model("Users",userSchema)
+
+
+
