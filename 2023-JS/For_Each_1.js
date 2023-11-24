@@ -14,9 +14,19 @@
 
 // ! Q.2 Print all elements who are smaller or equal to 25 .
 
+// let a = [6,25,16,29,26,21]
+// a.forEach(function(val){
+//     if (val<=25) {
+//         console.log(val);
+//     }
+// })
+
+
+// ! Q.3 Sum all the elements of array.
+let summ = 0
 let a = [6,25,16,29,26,21]
 a.forEach(function(val){
-    if (val<=25) {
-        console.log(val);
-    }
+    summ += val
+
 })
+console.log("The Total is = ",summ);
