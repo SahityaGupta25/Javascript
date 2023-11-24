@@ -1,0 +1,1 @@
+// * Callbacks are those functions which are written in AYSNC code or are AYSNC as it is async so we don't know that how long it will take to execute so we give a function to the async code and that function will execute after execution of sync code that function which we have given is known as callbacks.
