@@ -23,10 +23,25 @@
 
 
 // ! Q.3 Sum all the elements of array.
-let summ = 0
-let a = [6,25,16,29,26,21]
-a.forEach(function(val){
-    summ += val
+// let summ = 0
+// let a = [6,25,16,29,26,21]
+// a.forEach(function(val){
+//     summ += val
 
+// })
+// console.log("The Total is = ",summ);
+
+
+
+// ! Q.4 Add all elements except string.
+
+
+let summ = 0
+let a = [6,'660',25,16,'66',29,26,21]
+a.forEach(function(val){
+    if (typeof val === "number") {
+        summ += val
+    }
 })
+
 console.log("The Total is = ",summ);
