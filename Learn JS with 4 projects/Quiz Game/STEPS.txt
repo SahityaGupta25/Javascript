@@ -1,0 +1,1 @@
+1. To take Input in JS - Install "prompt-sync"
