@@ -1,3 +1,5 @@
 1. To take Input in JS - Install "prompt-sync"
 2. Use UpperCase function to covert any string to uppercase
 3. Use LowerCase function to covert any string to lowercase
+4. To round the number use "MATH.round()"
+5. For converting number to string use "to.string()"
