@@ -1,4 +1,4 @@
-bodY{
+body{
     padding: 0%;
     margin: 0%;
     height: 100vh;
@@ -11,8 +11,14 @@ bodY{
     justify-content: center;
     flex-direction: column;
 }
-.clock{
+#clock{
     height: 80px;
     width: 180px;
     border: 5px solid black;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-family:monospace
 }
