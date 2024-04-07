@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Number Guess Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    
+   <form action="" class="form">
+    <label for="guessField" id="guess">Guess a Number</label>
+    <input type="text" id="guessField" class="guessField">
+    <input type="submit" id="subt" value="Submit guess" class="guessSubmit">
+   </form>
+   <div class="resultParas">
+    <p>Previous Guesses: <span class="guesses"> </span>  </p>
+    <p>Guesses Remaining: <span class="lastResult">10</span> </p>
+    <p class="lowOrHi"></p>
+   </div>
+<script src="./script.js"></script>
 </body>
 </html>
