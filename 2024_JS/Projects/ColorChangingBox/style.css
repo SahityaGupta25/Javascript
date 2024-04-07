@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.button{
+    height: 150px;
+    width: 150px;
+    border: 4px solid black;
+    
+}
+#btn-1{
+    background-color: yellow;
+}
+#btn-2{
+    background-color: red;
+}
+#btn-3{
+    background-color: magenta;
+}
+#btn-4{
+    background-color: aqua;
+}
+.tiles{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    
+}
