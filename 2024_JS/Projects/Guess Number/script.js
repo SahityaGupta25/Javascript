@@ -36,13 +36,23 @@ function validateGuess(userGuessed){
         if (userGuessed === 11){
                 displayGuess(userGuessed)
                 displayMessage(`Game Over. Your random guess was = ${userGuessed}`)
+                endGame()
+        }else{
+            displayGuess(userGuessed)
+            checkGuess(userGuessed)
         }
     }
 
 }
 function checkGuess(guess){
-
-
+if(guess === randomNumber){
+    displayMessage(`You guessed it right. ${guess} is same as the ${randomNumber}.  `);
+    endGame()
+}else if (guess<randomNumber){
+    displayMessage("Your guess is Too low")
+}
+else if (guess>randomNumber){
+    displayMessage("Your guess is Too High")
 }
 function displayGuess(guess){
 
@@ -50,10 +60,11 @@ function displayGuess(guess){
 function displayMessage(){
 
 }
-function endGuess(guess){
+function endGame(guess){
 
 }
 function newGuess(guess){
 
 }
 
+}
