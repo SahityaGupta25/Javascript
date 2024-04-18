@@ -9,7 +9,7 @@ gsap.from("#page1 .box",{
         markers: true,
         start: "top 50%",
         end: "top 30%",
-        scrub: true
+        scrub: true // 1,2,3,4,5 = values
     }
 })
 gsap.from("#page2 .box",{
