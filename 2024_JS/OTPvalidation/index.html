@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+            background:silver;
+        }
+        .box{
+            width: 100%;
+            height: 100%;
+            background-color: darkcyan;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 2vh;
+        }
+        button{
+            padding: 0.5vw 1vw;
+            font-size: 1vw;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+<h1>Verify OTP</h1>
+<button onclick="generateOTP()">Verify</button>
+    </div>
+    <script>
+function generateOTP() {
+    let generateOTP = Math.floor(Math.random()*9000)
+    console.log(document.querySelector("h1").innerHtml = generateOTP.toLocaleString())
+}
+    </script>
+</body>
+</html>
