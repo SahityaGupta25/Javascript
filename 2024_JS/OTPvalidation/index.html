@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
         *{
             padding: 0;
             margin: 0;
@@ -16,33 +17,24 @@
             width: 100%;
             background:silver;
         }
-        .box{
-            width: 100%;
-            height: 100%;
-            background-color: darkcyan;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            gap: 2vh;
-        }
-        button{
-            padding: 0.5vw 1vw;
-            font-size: 1vw;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+        
+        </style>
 </head>
 <body>
     <div class="box">
-<h1>Verify OTP</h1>
-<button onclick="generateOTP()">Verify</button>
-    </div>
-    <script>
-function generateOTP() {
-    let generateOTP = Math.floor(Math.random()*9000)
-    console.log(document.querySelector("h1").innerHtml = generateOTP.toLocaleString())
+        <h1>Verify OTP</h1>
+        <button onclick="generateOTP()">Verify</button>
+        <label for="input" id="label">Enter OTP
+        </label>
+<input type="number" name="" id="input" placeholder="Enter the OTP">
+<button onclick="validateOTP()">Validate OTP</button>
+</div>
+<script>
+    function generateOTP() {
+        let generateOTP = Math.floor(1000+Math.random()*9000)
+        console.log(generateOTP);
+        window.localStorage.setItem("otp",generateOTP)
+    
 }
     </script>
 </body>
