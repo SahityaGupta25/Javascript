@@ -3,7 +3,7 @@ import LudoBoard from './LudoBoard'
 const App = () => {
   return (
     <div>
-
+      <LudoBoard/>
     </div>
   )
 }
