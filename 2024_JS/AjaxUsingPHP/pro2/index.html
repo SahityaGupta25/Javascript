@@ -5,25 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Travel Form</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img class="bg" src="./images.jpg" alt="" srcset="">
+    <img class="bg" src="./bg.jpg" alt="" srcset="">
     <div class="container">
         <h1>Welcome to US Trip Form</h1>
         <p>Enter your Details</p>
+        <p class="thank">Thanks for Submitting your form.</p>
 <form action="index.php" method="post">
     <input type="text" name="name" id="name" placeholder="Enter your Name">
     <input type="number" name="age" id="age" placeholder="Enter your age">
     <input type="text" name="gender" id="gender" placeholder="Enter your Gender">
     <input type="email" name="email" id="email" placeholder="Enter your email">
     <input type="phone" name="phone" id="phone" placeholder="Enter you Phone">
-    <textarea name="" id="" cols="30" rows="10" placeholder="Enter any other information here">
+    <textarea name="textArea" id="textArea" cols="30" rows="10" placeholder="Enter any other information here">
 
 
     </textarea>
     <button class="btn">Submit</button>
     <!-- <button class="btn">Reset</button> -->
-    
+    <!-- INSERT INTO `trip_data` (`serial_no`, `name`, `age`, `gender`, `email`, `phone`, `description`, `date`) VALUES ('01', 'Sahtya Gupta', '21', 'Male', 'mathew@gmail.com', '9876541218', 'In This Tutorial You Will Learn How To Download & Put Mods Into beamNG.drive How You Can Show Support. 1. Like My Videos 2.', '2024-06-13'); -->
     
 
 </form>
